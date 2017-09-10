@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Horários</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item class="turno">
+        <ion-label>Turno</ion-label>
+        <ion-select interface="popover">
+            <ion-option>Matutino</ion-option>
+            <ion-option>Vespertino</ion-option>
+            <ion-option>Noturno</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item class="dia">
+        <ion-label>Dia</ion-label>
+        <ion-select interface="popover">
+            <ion-option>Segunda</ion-option>
+            <ion-option>Terça</ion-option>
+            <ion-option>Quarta</ion-option>
+            <ion-option>Quinta</ion-option>
+            <ion-option>Sexta</ion-option>
+            <ion-option>Sábado</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-slides pager="true" class="horarios">
+        <ion-slide>
+            <ion-card class="horario">
+                <ion-card-title class="hora">
+                    18:45 - 19:35
+                </ion-card-title>
+                <ion-list>
+                    <ion-item text-wrap class="materia">
+                        <ion-icon name="book" ios="ios-book-outline" item-start></ion-icon>
+                        Redes de Computadores
+                    </ion-item>
+                    <ion-item text-wrap class="professor">
+                        <ion-icon name="school" ios="ios-school-outline" item-start></ion-icon>
+                        Rossana Cristina Ribeiro Morais
+                    </ion-item>
+                    <ion-item text-wrap class="local">
+                        <ion-icon name="pin" ios="ios-pin-outline" item-start></ion-icon>
+                        B1 - Laboratório de Informática e Tecnologia VIII
+                    </ion-item>
+                </ion-list>
+            </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+            Teste 2
+        </ion-slide>
+
+        <ion-slide>
+            Teste 3
+        </ion-slide>
+    </ion-slides>
+</ion-content>

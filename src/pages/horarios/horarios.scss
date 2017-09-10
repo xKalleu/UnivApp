@@ -1,0 +1,25 @@
+page-horarios {
+    .dia {
+        margin-top: 10px;
+    }
+
+    .horarios {
+        height: 300px;
+        margin-top: 10px;
+    }
+
+    .horarios .horario .hora {
+        font-size: 20px;
+        font-weight: 300;
+        color: map-get($colors, univale);
+    }
+
+    .horarios .horario ion-item {
+        border-bottom: 1px solid LightGray;
+        font-size: 15px;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: map-get($colors, univale);
+    }
+}

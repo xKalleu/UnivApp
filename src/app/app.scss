@@ -14,3 +14,27 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.toolbar-background, .tab-button {
+    background-color: map-get($colors, univale);
+}
+
+.toolbar-title, .bar-buttons, .back-button {
+    color: white;
+}
+
+.tab-button-text {
+    font-weight: bold;
+}
+
+.tabs-md .tab-button, .tabs-ios .tab-button {
+    color: rgba(255,255,255,0.4);
+}
+
+.tabs-md .tab-button[aria-selected=true], .tabs-ios .tab-button:hover:not(.disable-hover), .tabs-ios .tab-button[aria-selected=true] {
+    color: white;
+}
+
+.tabs-md[tabsHighlight=true] .tab-highlight {
+    background-color: white;
+}

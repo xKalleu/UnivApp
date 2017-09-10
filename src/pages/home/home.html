@@ -3,16 +3,51 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Início</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+<div class="container-capa">
+  <img src="/assets/campus.jpg" alt="capa">
+</div>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+<div class="perfil">
+  <div class="container-foto">
+     <img src="/assets/sem-foto.png" alt="foto"> 
+  </div>
+
+  <div class="dados">
+    <h3 class="nome">Samuel Medeiros</h3>
+    <p class="curso subtexto">Sistemas de Informação - 6ºP N - Turma U</p>
+    <p class="situacao subtexto">Situação: Frequente</p>
+  </div>
+</div>
+
+  <ion-card class="horario-atual">
+    <ion-card-title text-center>
+      Horário atual
+    </ion-card-title>
+    <ion-list>
+    <ion-item text-wrap class="materia">
+      <ion-icon name="book" ios="ios-book-outline" item-start></ion-icon>
+      Redes de Computadores
+    </ion-item>
+    <ion-item class="hora">
+      <ion-icon name="time" ios="ios-time-outline" item-start></ion-icon>
+      18:45 às 19:35
+    </ion-item>
+    <ion-item text-wrap class="sala">
+      <ion-icon name="pin" ios="ios-pin-outline" item-start></ion-icon>
+      B1 - Laboratório de Informática e Tecnologia VIII
+    </ion-item>
+   </ion-list>
+  </ion-card>
+
+  <div class="container-botao">
+    <button ion-button block color=univale (click)="abrirHorarios()" class="botao-horarios">
+     VER HORÁRIOS
+    </button>
+  </div>
 </ion-content>

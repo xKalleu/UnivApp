@@ -1,3 +1,69 @@
 page-home {
 
+    .container-foto {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        border: 2px solid white;
+        background-color: white;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    }
+
+    .dados {
+        text-align: center;
+    }
+
+    .container-capa {
+        background-color: black;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+            -moz-filter: blur(5px);
+            -o-filter: blur(5px);
+            -ms-filter: blur(5px);  
+            transform: scale(1.1); 
+            opacity: 0.8;
+        }
+    }
+
+    .perfil {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        .dados .nome {
+            font-weight: 300;
+        }
+        .dados .subtexto{
+            font-size:12px;
+            margin-bottom:-10px;
+        }
+    }
+
+    .container-botao {
+        text-align: center
+    }
+
+    .horario-atual ion-list ion-item {
+        border-bottom: 1px solid LightGray;
+        font-size: 15px;
+    }
+
+    .horario-atual ion-card-title {
+        font-size: 20px;
+        font-weight: 300;
+        color: map-get($colors, univale);
+    }
 }
