@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { Chart } from 'chart.js';
 
 @Component({
@@ -24,9 +24,13 @@ export class GeralPage {
                 label: 'Nota total',
                 data: [70, 30],
                 backgroundColor: [
-                    'rgba(63,195,128,0.4)'
+                    'rgba(0,55,123,0.5)'
                 ]
             }]
+        },
+        options: {
+          responsive: false,
+          mainAspectRatio: false
         }
     });
   }
