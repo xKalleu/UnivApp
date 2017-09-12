@@ -1,6 +1,7 @@
+import { NotasPage } from './notas/notas';
 import { GeralPage } from './geral/geral';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
   selector: 'page-disciplina',
@@ -8,7 +9,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DisciplinaPage {
 
-    geralRoot = GeralPage;
+    geralRoot: any = GeralPage;
+    notasRoot: any = NotasPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

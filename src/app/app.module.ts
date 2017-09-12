@@ -7,7 +7,8 @@ import { HomePage } from '../pages/home/home';
 import { HorariosPage } from '../pages/horarios/horarios';
 import { DisciplinasPage } from './../pages/disciplinas/disciplinas';
 import { DisciplinaPage } from '../pages/disciplina/disciplina';
-import { GeralPage } from "../pages/disciplina/geral/geral";
+import { GeralPage } from '../pages/disciplina/geral/geral';
+import { NotasPage } from '../pages/disciplina/notas/notas';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -19,7 +20,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HorariosPage,
     DisciplinasPage,
     DisciplinaPage,
-    GeralPage
+    GeralPage,
+    NotasPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HorariosPage,
     DisciplinasPage,
     DisciplinaPage,
-    GeralPage
+    GeralPage,
+    NotasPage
   ],
   providers: [
     StatusBar,
