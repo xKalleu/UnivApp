@@ -9,9 +9,14 @@ import { DisciplinasPage } from './../pages/disciplinas/disciplinas';
 import { DisciplinaPage } from '../pages/disciplina/disciplina';
 import { GeralPage } from '../pages/disciplina/geral/geral';
 import { NotasPage } from '../pages/disciplina/notas/notas';
+import { FaltasPage } from '../pages/disciplina/faltas/faltas';
+import { ApsPage } from '../pages/disciplina/aps/aps';
+import { NotaPage } from '../pages/disciplina/notas/nota/nota';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
+import { SuperTabsModule } from 'ionic2-super-tabs';
 
 @NgModule({
   declarations: [
@@ -21,13 +26,17 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DisciplinasPage,
     DisciplinaPage,
     GeralPage,
-    NotasPage
+    NotasPage,
+    FaltasPage,
+    ApsPage,
+    NotaPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp, {
       backButtonText: 'Voltar'
     }),
+    SuperTabsModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -37,7 +46,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DisciplinasPage,
     DisciplinaPage,
     GeralPage,
-    NotasPage
+    NotasPage,
+    FaltasPage,
+    ApsPage,
+    NotaPage
   ],
   providers: [
     StatusBar,

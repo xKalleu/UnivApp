@@ -1,7 +1,23 @@
-<ion-header>
-
-</ion-header>
-
 <ion-content padding>
-    
+    <ion-list class="notas">
+    	<ion-item (click)="abrirNota()" class="nota">
+    	<ion-label class="titulo">Um título de prova bem grande</ion-label>
+    	<div item-content class="pontos">10/20</div>
+    	</ion-item>
+
+    	<ion-item class="nota">
+    	<ion-label class="titulo">Mais um título bem grande</ion-label>
+    	<div item-content class="pontos">20/20</div>
+    	</ion-item>
+
+    	<ion-item class="nota">
+    	<ion-label class="titulo">Agora um menor</ion-label>
+    	<div item-content class="pontos">7,7/20</div>
+    	</ion-item>
+
+    	<ion-item class="nota">
+    	<ion-label class="titulo">Acho que está bom</ion-label>
+    	<div item-content class="pontos">19/20</div>
+    	</ion-item>
+    </ion-list>
 </ion-content>

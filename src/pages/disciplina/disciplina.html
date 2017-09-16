@@ -1,20 +1,12 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Detalhes</ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-<ion-tabs class="abas" tabsHighlight="true" tabsPlacement="top">
+<ion-navbar>
+	<ion-title>Detalhes</ion-title>
+</ion-navbar>
 
-    <ion-tab tabTitle="GERAL" [root]="geralRoot"></ion-tab>
-
-    <ion-tab tabTitle="NOTAS" [root]="notasRoot"></ion-tab>
-
-    <ion-tab tabTitle="FALTAS"></ion-tab>
-
-    <ion-tab tabTitle="APS"></ion-tab>
-    
-</ion-tabs>
+<super-tabs indicatorColor="light" toolbarColor="light" [config]="{ sideMenu: 'left' }" class="abas">
+	<super-tab [root]="geralRoot" title="GERAL"></super-tab>
+	<super-tab [root]="notasRoot" title="NOTAS"></super-tab>
+	<super-tab [root]="faltasRoot" title="FALTAS"></super-tab>
+	<super-tab [root]="apsRoot" title="APS"></super-tab>
+</super-tabs>
   
-</ion-content>

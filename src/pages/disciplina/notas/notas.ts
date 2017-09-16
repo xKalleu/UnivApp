@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { App, NavController, NavParams } from 'ionic-angular';
+import { NotaPage } from '../notas/nota/nota';
 
 @Component({
   selector: 'page-notas',
@@ -8,8 +9,11 @@ import { NavController, NavParams } from 'ionic-angular';
 
 export class NotasPage {
 
-    constructor(public navCtrl: NavController, public navParams: NavParams) {
+    constructor(public appCtrl : App, public navCtrl: NavController, public navParams: NavParams) {
     }
 
+    abrirNota() {
+    	this.appCtrl.getRootNav().push(NotaPage);
+    }
     
 }
