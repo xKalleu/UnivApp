@@ -24,7 +24,7 @@ page-home {
         top: 0;
         left: 0;
         width: 100%;
-        height: 120px;
+        height: 100px;
         overflow: hidden;
         img {
             width: 100%;
@@ -56,14 +56,17 @@ page-home {
         text-align: center
     }
 
-    .horario-atual ion-list ion-item {
-        border-bottom: 1px solid LightGray;
-        font-size: 15px;
-    }
+    .horario-atual {
 
-    .horario-atual ion-card-title {
-        font-size: 20px;
-        font-weight: 300;
-        color: map-get($colors, univale);
+        ion-list ion-item {
+            border-bottom: 1px solid LightGray;
+            font-size: 15px;
+        }
+
+        ion-card-title {
+            font-size: 20px;
+            font-weight: 300;
+            color: map-get($colors, univale);
+        }
     }
 }

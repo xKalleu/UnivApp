@@ -1,3 +1,26 @@
 page-notas {
-    
+    .nota > .indicador {
+        height: 8px;
+        width: 8px;    
+        display: block;    
+        border-radius: 100px;     
+    }
+
+    .nota > .indicador-ativo {
+        background-color: map-get($colors, univale);
+    }
+
+    .nota > .indicador-inativo {
+        background-color: LightGray;
+    }
+
+    .notas {
+        .item-block:last-child {
+            border-bottom: none;
+        }
+
+        .item-block:first-child {
+            border-top: none;
+        }
+    }
 }

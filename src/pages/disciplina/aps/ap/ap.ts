@@ -1,17 +1,15 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, App } from 'ionic-angular';
 
 @Component({
-  selector: 'page-faltas',
-  templateUrl: 'faltas.html',
+  selector: 'page-ap',
+  templateUrl: 'ap.html',
 })
 
-export class FaltasPage {
+export class ApPage {
 	
 	constructor(public navCtrl: NavController, public navParams: NavParams) {
 	
 	}
-
-	
 
 }

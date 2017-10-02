@@ -1,3 +1,18 @@
 page-aps {
-	
+    .aps > .indicador {
+        height: 8px;
+        width: 8px;    
+        display: block;    
+        border-radius: 100px;     
+    }
+
+    .lista-aps {
+        .item-block:last-child {
+            border-bottom: none;
+        }
+
+        .item-block:first-child {
+            border-top: none;
+        }
+    }
 }

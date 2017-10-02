@@ -2,10 +2,26 @@ page-geral {
     .info {
         h4 {
             font-weight: 300;
-        }
+		}
+		margin-left: 10px;
+		margin-right: 10px;
     }
 
-    .grafico {
-        margin-top: 30px;
+    .info-notas {
+
+		margin-top: 40px;
+		margin-bottom: 40px;
+
+    	ion-list ion-item {
+    		border-bottom: 1px solid LightGray;
+        	font-size: 15px;
+    	}
+
+    	ion-card-title {
+	        font-size: 20px;
+	        font-weight: 300;
+	        color: map-get($colors, univale);
+    	}
+      
     }
 }

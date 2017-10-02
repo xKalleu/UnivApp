@@ -13,6 +13,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = HomePage;
+  paginaAtual: any;
 
   pages: Array<{title: string, component: any}>;
 
@@ -25,6 +26,8 @@ export class MyApp {
       { title: 'Horários', component: HorariosPage},
       { title: 'Disciplinas', component: DisciplinasPage}
     ];
+
+    this.paginaAtual = this.pages[0];
 
   }
 
@@ -41,5 +44,10 @@ export class MyApp {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
+    this.paginaAtual = page;
+  }
+
+  checarAtual(pagina) {
+    return this.paginaAtual == pagina;
   }
 }

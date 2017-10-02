@@ -1,5 +1,6 @@
-import { Component, ViewChild } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { Component } from '@angular/core';
+import { NavController, NavParams, App } from 'ionic-angular';
+import { ApPage } from './ap/ap';
 
 @Component({
   selector: 'page-aps',
@@ -8,10 +9,12 @@ import { NavController, NavParams } from 'ionic-angular';
 
 export class ApsPage {
 	
-	constructor(public navCtrl: NavController, public navParams: NavParams) {
+	constructor(public appCtrl: App, public navCtrl: NavController, public navParams: NavParams) {
 	
 	}
 
-	
+  abrirAps() {
+    this.appCtrl.getRootNav().push(ApPage);
+  }
 
 }

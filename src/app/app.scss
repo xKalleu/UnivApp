@@ -38,3 +38,23 @@
 .tabs-md[tabsHighlight=true] .tab-highlight {
     background-color: white;
 }
+
+.menu-lateral {
+	background-color: map-get($colors, univale);
+}
+
+.item-menu-lateral {
+	background-color: rgba(0,0,0,0);
+}
+
+.item-menu-lateral:hover {
+	background-color: rgba(0,0,0,0.3);
+}
+
+.item-menu-lateral ion-label {
+	color: white;
+}
+
+.activeHighlight {
+	background-color: rgba(0,0,0,0.3);
+}

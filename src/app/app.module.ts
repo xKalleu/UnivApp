@@ -12,6 +12,7 @@ import { NotasPage } from '../pages/disciplina/notas/notas';
 import { FaltasPage } from '../pages/disciplina/faltas/faltas';
 import { ApsPage } from '../pages/disciplina/aps/aps';
 import { NotaPage } from '../pages/disciplina/notas/nota/nota';
+import { ApPage } from '../pages/disciplina/aps/ap/ap';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -29,12 +30,13 @@ import { SuperTabsModule } from 'ionic2-super-tabs';
     NotasPage,
     FaltasPage,
     ApsPage,
-    NotaPage
+    NotaPage,
+    ApPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp, {
-      backButtonText: 'Voltar'
+      backButtonText: ''
     }),
     SuperTabsModule.forRoot()
   ],
@@ -49,7 +51,8 @@ import { SuperTabsModule } from 'ionic2-super-tabs';
     NotasPage,
     FaltasPage,
     ApsPage,
-    NotaPage
+    NotaPage,
+    ApPage
   ],
   providers: [
     StatusBar,

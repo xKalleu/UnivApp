@@ -3,5 +3,16 @@ page-faltas {
 	.mes {
 		margin-bottom: 10px;
 	}
+
+	.faltas > ion-item-divider{
+		background-color: rgba(0,0,0,0);
+		font-size: 20px;
+		font-weight: 300;
+		color: map-get($colors, univale);
+	}
+
+	.faltas > .item-block:last-child {
+		border-bottom: none;
+	}
 	
 }

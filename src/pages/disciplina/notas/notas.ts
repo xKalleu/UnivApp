@@ -12,7 +12,7 @@ export class NotasPage {
     constructor(public appCtrl : App, public navCtrl: NavController, public navParams: NavParams) {
     }
 
-    abrirNota() {
+    abrirNota() {     
     	this.appCtrl.getRootNav().push(NotaPage);
     }
     
